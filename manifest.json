@@ -2,7 +2,7 @@
   "name": "Minhas Finanças",
   "short_name": "Finanças",
   "description": "Controle financeiro pessoal com lançamento por voz",
-  "start_url": "/",
+  "start_url": "/financas/financas/",
   "display": "standalone",
   "background_color": "#0f0f13",
   "theme_color": "#0f0f13",
