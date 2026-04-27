@@ -1,0 +1,73 @@
+# 📱 Minhas Finanças — Guia de Instalação
+
+## Passo a passo para colocar no celular
+
+---
+
+### 1️⃣ Criar conta no GitHub (grátis)
+Acesse: https://github.com/signup
+- Use seu e-mail
+- Escolha um username (ex: seunome)
+- Plano gratuito é suficiente
+
+---
+
+### 2️⃣ Criar o repositório
+Após fazer login:
+1. Clique no botão verde **"New"** (canto superior esquerdo)
+2. Em **Repository name**, escreva: `financas`
+3. Marque **Public**
+4. Clique em **Create repository**
+
+---
+
+### 3️⃣ Fazer upload dos arquivos
+Na página do repositório recém-criado:
+1. Clique em **"uploading an existing file"**
+2. Arraste TODOS os arquivos desta pasta para a área indicada:
+   - index.html
+   - manifest.json
+   - sw.js
+   - icon-192.png
+   - icon-512.png
+3. Clique em **Commit changes**
+
+---
+
+### 4️⃣ Ativar o GitHub Pages
+1. Clique em **Settings** (aba no topo do repositório)
+2. No menu lateral, clique em **Pages**
+3. Em **Source**, selecione **Deploy from a branch**
+4. Em **Branch**, selecione **main** e clique **Save**
+5. Aguarde 1-2 minutos
+
+Seu app estará disponível em:
+**https://SEU_USERNAME.github.io/financas**
+
+---
+
+### 5️⃣ Instalar no celular
+1. Abra o link acima no **Chrome** (Android) ou **Safari** (iPhone)
+2. Android: toque no menu ⋮ → "Adicionar à tela inicial"
+3. iPhone: toque em compartilhar □↑ → "Adicionar à tela de início"
+4. Confirme — o ícone aparece como um app normal!
+
+---
+
+### 🔑 Configurar a chave da API (para lançamento por voz)
+Abra o arquivo `index.html` e encontre a linha:
+```
+const ANTHROPIC_KEY = "SUA_CHAVE_AQUI";
+```
+Substitua `SUA_CHAVE_AQUI` pela sua chave da API Anthropic.
+Você obtém sua chave em: https://console.anthropic.com/
+
+> ⚠️ **Atenção**: Nunca compartilhe publicamente seu arquivo com a chave real.
+> Para uso pessoal no GitHub Pages público, prefira deixar sem voz
+> ou usar um repositório privado.
+
+---
+
+### ✅ Pronto!
+O app salva os dados no próprio celular (localStorage).
+Funciona offline após a primeira abertura.
